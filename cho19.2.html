@@ -1,0 +1,24 @@
+<html>
+<title>1710992218</title>
+<body>
+<script>
+function prime(a)
+{
+if(a==0 || a==1 )
+return false;
+for(var i=2;i<a;i++)
+{	
+if(a%i==0)
+return false;}
+return true;
+}
+for(var i=1;i<=100;i++)
+{
+if(prime(i))
+{
+document.write(i+"\n");
+document.write("</br>");
+}}
+</script>
+</body>
+</html>

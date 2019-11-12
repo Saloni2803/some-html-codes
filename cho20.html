@@ -1,0 +1,56 @@
+<html><title>1710992218></title>
+<body onload="myFunction5()">
+<form onsubmit="myFunction9()">
+<form onreset="myFunction7()">
+
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+</br></BR>
+Enter your name: <input type="text" id="fname" onchange="myFunction1()">
+</BR>
+<p ondblclick="myFunction2()">Doubleclick</p>
+
+<button onclick="myFunction3()">Click me</button>
+<p id="demo"></p></br>
+Enter your name: <input type="text" onfocus="myFunction(this)"></br></br>
+<input type="text" onkeydown="myFunction4()"></br>
+<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+<p1 onmousedown="myFunction6(this,'red')" onmouseup="myFunction6(this,'green')">
+Click the text to change the color.</p1>
+Select some of the text: <input type="text" value="Hello world!" onselect="myFunction8()"></br>
+ <input type="submit" value="Submit"></form>
+  <input type="reset"></form>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+function myFunction1() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+function myFunction3() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+function myFunction4() {
+  alert("You pressed a key inside the input field");
+}
+function myFunction5() {
+  alert("Page is loaded");
+}
+function myFunction6(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+function myFunction7() {
+  alert("The form was reset");
+}
+function myFunction8() {
+  alert("You selected some text!");
+}
+function myFunction9() {
+   alert("The form was submitted");}</script></body></html>
